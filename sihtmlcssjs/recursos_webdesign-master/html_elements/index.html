@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<meta charset="utf-8">
+<title>HTML</title>
+<link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+<header>
+	<div id="topHeader">
+		<a class="active" href="index.html">HTML</a>
+		<a href="css.html">CSS</a>
+		<a href="js.html">JS</a>
+		<div id="navButton">&#9776;</div>
+	</div>   	
+	<div id="navWrapper">
+		
+		<div id="nav">
+			<a id="closeMenu" class="menuBtn" >&times;</a>
+			<a class="menuBtn" href="#lorem1">Loremipsum</a>
+			<a class="menuBtn" href="#lorem2">Loremipsum</a>
+			<a class="menuBtn" href="#lorem3">Loremipsum</a>
+		</div>
+
+	</div>
+	
+</header>
+
+<div id="wrapper">
+	<div id="divLogo"><img id="logo" src="HTML5_logo.svg" alt=""></div>
+	<div id="goUp">
+		<a href="#root">
+			<i class="fas fa-arrow-up"></i>
+		</a>
+	</div>
+<section id="root">
+<div id="c_1" class="container">
+		<h2>Raíz principal</h2>
+	<ul>
+		<li class="li"><a href="#">html</a></li> 
+			<p>
+			O elemento HTML html representa a raiz (elemento de nível superior) de um documento HTML, portanto, também é chamado de elemento raiz . Todos os outros elementos devem ser descendentes desse elemento.
+			</p>
+	</ul>
+</div>
+</section>
+	<hr>
+<footer>
+	<a rel="license" href="direitos.html" target="_blank">
+		<img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+		Licença Creative Commons
+		<p>2019 &copy; EPCI</p>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//$(nomeDoElemento).nomeDaAcção
+		$('#nav').slideUp(1);
+	
+		$('#navButton').on('click', function(){
+			$("#nav").delay(10).animate({width: 'toggle'}, 500);
+		});
+
+		$('.menuBtn').on('click', function(){
+			$("#nav").delay(10).animate({width: 'toggle'}, 500);
+			
+		});
+		
+		/* obter intervalo entre cada item */
+
+		$('p').append( "<br>").append( "<hr>").append("<br>");
+		
+	});
+</script>
+</body>
+</html>
